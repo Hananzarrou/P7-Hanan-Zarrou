@@ -5,11 +5,11 @@
 </template>
 <script>
 
-import Connecter from "../components/Connecter.vue";
+import Seconnecter from "../components/Seconnecter.vue";
 export default {
   name: "login",
   components: {
-    Connecter,
+    Seconnecter,
   },
 };
 </script>
