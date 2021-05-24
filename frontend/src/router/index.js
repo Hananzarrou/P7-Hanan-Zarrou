@@ -4,7 +4,7 @@ import Acceuil from "../views/Acceuil.vue";
 import Login from "../views/Login.vue";
 import Post from "../views/Post.vue";
 import ModifProfil from "../views/ModifProfil.vue";
-import Data from "../components/Connecter.vue";
+import Data from "../components/Seconnecter.vue";
 import Profil from "../views/Profil.vue";
 import ProfilChoice from "../views/ProfilChoice.vue";
 // import views
