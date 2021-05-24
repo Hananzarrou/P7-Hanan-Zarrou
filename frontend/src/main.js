@@ -26,12 +26,11 @@ import router from "./router";
   [Vuelidate],
   [axios],
 
-  /* @ts-ignore: TS2557, TS wrong about array above having empty members */
 ].forEach((args) => Vue.use(...args));
 
 // Install BootstrapVue
 Vue.use(BootstrapVue);
-// Optionally install the BootstrapVue icon components plugin
+// install plugin icon 
 Vue.use(IconsPlugin);
 
 Vue.config.productionTip = false;
