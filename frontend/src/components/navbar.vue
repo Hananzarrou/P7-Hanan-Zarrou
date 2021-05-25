@@ -40,11 +40,11 @@
           >
         </li>
 
-        <!-- bouton logout meme si son token expire tant qu il est stocker dans localstorage il pourra se logout-->
+        <!-- bouton logout meme si son token expire tant qu il est stocker dans localstorage il pourra se deconnecter-->
 
         <li v-if="token" @click="deconnecte" class="nav-item">
           <router-link class="text-primary nav-link" to="/logout"
-            >Logout</router-link
+            >se deconnecter</router-link
           >
         </li>
         <!-- Menu poste user et collegue -->
@@ -135,4 +135,12 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+.navbar-dark .navbar-nav .nav-link {
+    color: whitesmoke;
+}
+.logo {
+    max-height: 100px;
+    max-width: 200px;
+}
+</style>
