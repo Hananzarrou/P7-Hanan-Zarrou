@@ -47,7 +47,7 @@
           class="error"
           v-if="!$v.email.required && submitStatus === 'ERROR'"
         >
-          Field is required
+          le champs est obligatoire
         </div>
         <div class="error" v-if="!$v.email.email">
           écrire un email valide ex: hanan@gmail.com
@@ -99,7 +99,7 @@
           erreur serveur:Le mot de passe ou l'email ne correponde pas OU server
           HS !
         </p>
-        <p class="typo__p" v-if="submitStatus === 'PENDING'">Sending...</p>
+        <p class="typo__p" v-if="submitStatus === 'PENDING'">en cour d'envoie...</p>
 
         <br />
         <br />
