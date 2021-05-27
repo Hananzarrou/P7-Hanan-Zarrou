@@ -20,7 +20,7 @@ export default {
 </script>
 
 <style scoped>
- .footer {
+ .Footer {
     margin-top: 20px;
  }
 </style>
