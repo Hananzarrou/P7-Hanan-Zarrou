@@ -95,13 +95,13 @@
           class="error"
           v-if="!$v.email.required && submitStatus === 'ERROR'"
         >
-          Field is required
+          Le champs est requis!
         </div>
         <div class="error" v-if="!$v.email.maxLength">
           Max. {{ $v.email.$params.maxLength.max }} letters.
         </div>
         <div class="error" v-if="!$v.email.email">
-          écrire un email valide ex: marty@hotmail.com (sans Majuscules!)
+          écrire un email valide ex: hanan@hotmail.com (sans Majuscules!)
         </div>
 
         <div class=" form-group">
