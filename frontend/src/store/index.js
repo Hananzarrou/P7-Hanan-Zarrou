@@ -1,12 +1,11 @@
-import { createStore } from 'vuex'
+import Vue from 'vue'
+import Vuex from 'vuex'
 
+Vue.use(Vuex)
 
-
-export default createStore({
+export default new Vuex.Store({
   state: {
-        month: 7,
-        day: 23,
-        year: 2010
+    
   },
   mutations: {
   },

@@ -1,99 +1,50 @@
-import Vue from "vue";
-import VueRouter from "vue-router";
-import Acceuil from "../views/Acceuil.vue";
-import Login from "../views/Login.vue";
-import Post from "../views/Post.vue";
-import ModifProfil from "../views/ModifProfil.vue";
-import Data from "../components/Seconnecter.vue";
-import Profil from "../views/Profil.vue";
-import ProfilChoice from "../views/ProfilChoice.vue";
-// import views
+import Vue from 'vue'
+import VueRouter from 'vue-router'
 
-Vue.use(VueRouter);
+Vue.use(VueRouter)
 
-//const userChoice = localStorage.getItem("userChoice");
-
-// routes
 const routes = [
   {
-    path: "/",
-    name: "Acceuil",
-    component: Acceuil,
-    meta: {
-      requiresVisitor: true,
-    },
+    path: '/',
+    name: 'Home',
+    component: () => import('../views/Home.vue')
   },
   {
-    path: "/login",
-    name: "Login",
-    component: Login,
-    meta: {
-      requiresVisitor: true,
-    },
+    path: '/signup',
+    name: 'Signup',
+    component: () => import('../views/Signup.vue')
   },
   {
-    path: `/profil/:userChoice`, //${userProfil}
-    name: "ProfilUser",
-    component: ProfilChoice,
-    meta: {
-      requiresAuth: true,
-    },
+    path: '/login',
+    name: 'Login',
+    component: () => import('../views/Login.vue')
   },
   {
-    path: "/post",
-    name: "Post",
-    component: Post,
-    meta: {
-      requiresAuth: true,
-    },
+    path: '/myprofile',
+    name: 'Myprofile',
+    component: () => import('../views/Myprofile.vue')
   },
   {
-    path: "/profil",
-    name: "Profil",
-    component: Profil,
-    meta: {
-      requiresAuth: true,
-    },
-  },
+    path: '/allpost',
+    name: 'allpost',
+    component: () => import('../views/AllPost.vue')
+  }, 
+  
+  {
+    path: '/addpost',
+    name: 'AddPost',
+    component: () => import('../views/AddPost.vue')
+  }, 
+  {
+    path: '/post/:id',
+    name: 'Post',
+    component: () => import('../views/Post.vue')
+  }, 
+]
 
-  {
-    path: "/upProfil",
-    name: "UpProfil",
-    component: ModifProfil,
-    meta: {
-      requiresAuth: true,
-    },
-  },
-];
-
-// router
 const router = new VueRouter({
-  mode: "history",
-  routes,
-});
+  mode: 'history',
+  routes
+})
 
-// navigation guard
-
-router.beforeEach((to, from, next) => {
-  if (to.matched.some((routes) => routes.meta.requiresAuth)) {
-    if (!Data.data.token) {
-      next({
-        name: "Login" || "Acceuil",
-      });
-    } else {
-      next();
-    }
-  } else if (to.matched.some((routes) => routes.meta.requiresVisitor)) {
-    if ((Data.data.token = localStorage.getItem("acces_token"))) {
-      next({
-        name: "Post" || "UpProfil" || "ProfilUser" || "Profil",
-      });
-    } else {
-      next();
-    }
-  } else {
-    next();
-  }
-});
-
-export default router;
+export default router
