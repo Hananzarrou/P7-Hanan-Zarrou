@@ -22,5 +22,6 @@ export default {
 <style scoped>
  .Footer {
     margin-top: 20px;
+    
  }
 </style>

@@ -1,6 +1,6 @@
 /*reglage marge*/
 
-* {
+/** {
     margin: 0 !important;
   }
   .stopPadMarg {
@@ -13,7 +13,7 @@
   
   /*reglage des hauteur*/
   
-  .hauteur {
+  /*.hauteur {
     height: 100vh;
   }
   .mi-hauteur {
@@ -44,7 +44,7 @@
     height: 30px;
   }
   
-  /* reglage des largeur*/
+  /* reglage des largeur
   .largeur50 {
     width: 50%;
   }
@@ -64,7 +64,7 @@
     width: 25px;
   }
   
-  /* bordure des cartes etc*/
+  /* bordure des cartes etc
   
   .bordureProfil {
     border: 3mm ridge #ffd7d7ff;

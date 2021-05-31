@@ -2,19 +2,35 @@
 //require('dotenv').config()//
 const express = require('express');
 const bodyParser = require('body-parser');
-const mongoose = require('mongoose');
+
 const path = require('path');
 const helmet = require("helmet");
-
+const Sequelize = require("sequelize");
+const dbConfig = require("../config/db.config.js");
 const sauceRoutes = require('./routes/sauce');
 const userRoutes = require('./routes/user');
-console.log("mongopassword", process.env.MONGO_PASSWORD)
-//mongoose.connect(`mongodb+srv://${process.env.MONGO_USERNAME}:${process.env.MONGO_PASSWORD}@cluster0.5fuiw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`,//
-mongoose.connect('mongodb+srv://hananprojet6:13131313@cluster0.5fuiw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
-  { useNewUrlParser: true,
-    useUnifiedTopology: true })
-  .then(() => console.log('Connexion à MongoDB réussie !'))
-  .catch(() => console.log('Connexion à MongoDB échouée !'));
+
+// initialisation de la base de donnee
+const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
+  host: dbConfig.HOST,
+  dialect: dbConfig.dialect,
+  operatorsAliases: false,
+
+  pool: {
+    max: dbConfig.pool.max,
+    min: dbConfig.pool.min,
+    acquire: dbConfig.pool.acquire,
+    idle: dbConfig.pool.idle
+  }
+});
+
+// creation de db qui contient sequelize et la base de donnee
+const db = {};
+db.Sequelize = Sequelize;
+db.sequelize = sequelize;
+db.tutorials = require("./models/user.model.js")(sequelize, Sequelize);
+
+module.exports = db;
 
 const app = express();
 app.use(helmet());
