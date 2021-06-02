@@ -1,14 +1,19 @@
+//Je récupère express pour crée un routeur
 const express = require('express');
 const router = express.Router();
 
+//J'importe mes logiques métier (controllers) pour les intégrer à la route correspondante
 const commentsCtrl = require('../controllers/comment');
+//J'importe le middleware qui protège mes routes
 const auth = require ('../middleware/auth');
 
 //Routes
+//Le : devant id indique à Express que ce chemin est dynamique 
 router.post('/:id/comment', auth, commentsCtrl.createComment);
 router.get('/:id/comment', auth, commentsCtrl.getAllComments);
-
- 
+router.put('/:id', auth, commentsCtrl.modifyComment);
+router.delete('/:id', auth, commentsCtrl.deleteComment);
+ //Je réexporte le routeur
 module.exports = router;
 
 /*const express = require('express');
