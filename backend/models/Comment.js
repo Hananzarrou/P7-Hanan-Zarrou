@@ -1,4 +1,21 @@
-const mongoose = require('mongoose');
+const schema = require("../models/password");
+
+module.exports = (req, res, next) => {
+    
+    if (!schema.validate(req.body.password)) {
+
+      res.status(401).json({
+        error: ('Mot de passe faible !')
+      });
+    
+     
+    } else {
+     
+      next();
+    }
+  };
+
+/*const mongoose = require('mongoose');
 
 const sauceSchema = mongoose.Schema({
     userId: { type: String, required: true },
@@ -14,4 +31,4 @@ const sauceSchema = mongoose.Schema({
     usersDisliked: { type: Array},
 });
 
-module.exports = mongoose.model('Sauce', sauceSchema);
+module.exports = mongoose.model('Sauce', sauceSchema);*/
