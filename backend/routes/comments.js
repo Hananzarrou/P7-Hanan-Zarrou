@@ -11,8 +11,7 @@ const auth = require ('../middleware/auth');
 //Le : devant id indique à Express que ce chemin est dynamique 
 router.post('/:id/comment', auth, commentsCtrl.createComment);
 router.get('/:id/comment', auth, commentsCtrl.getAllComments);
-router.put('/:id', auth, commentsCtrl.modifyComment);
-router.delete('/:id', auth, commentsCtrl.deleteComment);
+
  //Je réexporte le routeur
 module.exports = router;
 

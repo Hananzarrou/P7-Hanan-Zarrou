@@ -7,7 +7,7 @@
       controls
       indicators
       background="#ccc"
-      style="text-shadow: 1px 1px 2px #000;"
+      style="text-shadow: 1px 1px 2px succes;"
       @sliding-start="onSlideStart"
       @sliding-end="onSlideEnd"
     >
@@ -15,9 +15,9 @@
       <template  v-slot:img>
         <img
             class="d-block img-fluid w-100"
-            width="1024"
-            height="480"
-            src="@/assets/build-groupomania.jpg"
+            width="100"
+            height="100"
+            src="@/assets/photo5envir.jpg"
             alt="image slot"
           >
           </template>
@@ -26,9 +26,9 @@
       <template  v-slot:img>
         <img
             class="d-block img-fluid w-100"
-            width="1024"
-            height="480"
-            src="@/assets/slide-groupomania.png"
+            width="100"
+            height="100"
+            src="@/assets/photo3envir.jpg"
             alt="image slot"
           >
           </template>
@@ -37,9 +37,9 @@
       <template  v-slot:img>
         <img
             class="d-block img-fluid w-100"
-            width="1024"
-            height="480"
-            src="@/assets/slide-main.png"
+            width="100"
+            height="100"
+            src="@/assets/photo1envir.jpg"
             alt="image slot"
           >
           </template>

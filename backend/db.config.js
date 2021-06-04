@@ -1,14 +1,14 @@
 const mysql = require('mysql');
 const { Sequelize }  = require('sequelize');
-/*require('dotenv').config();*/
+require('dotenv').config();
 
 const sequelize = new Sequelize({
 
-    host: 'localhost',
+    host: 'DB_HOST',
  
-    user: 'hanan',
+    user: 'DB_USER',
  
-    password: '1234',
+    password: 'DB_PASS',
 
     database: 'bas_groupomania',
 

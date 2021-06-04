@@ -12,8 +12,13 @@ export default {
 </script>
 
 <style scoped>
-    h1, h2 {
-        color: #000000;
+    h1 {
+        color: #444242;
         font-weight: bold;
+    };
+    h2 {
+        color: #4d1143;
+        font-weight: normal;
     }
+
 </style>
