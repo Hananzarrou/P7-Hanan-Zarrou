@@ -5,10 +5,14 @@ require('dotenv').config();
 const sequelize = new Sequelize({
 
     host: 'DB_HOST',
+    //host:localhost,
  
     user: 'DB_USER',
+   //user:hanan,
+
  
     password: 'DB_PASS',
+    //password:1234,
 
     database: 'bas_groupomania',
 
@@ -21,7 +25,7 @@ const sequelize = new Sequelize({
   const db = {};
 try {
   db;
-  console.log('Connecté à la base de données MySQL!');
+  console.log('Connecté avec succes à la base de données MySQL!');
 } catch (error) {
   console.error('Impossible de se connecter, erreur suivante :', error);
 }
