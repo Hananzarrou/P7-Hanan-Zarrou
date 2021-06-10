@@ -25,7 +25,7 @@
       </label>
         
   <div class="col">
-                        <button class="btn fluid btn-fposts btn-sm bg-info text-dark font-weight-bold">Envoyer</button>
+                        <button class="btn fluid btn-fposts btn-md bg-danger text-dark font-weight-bold">Envoyer</button>
                     </div>
                     </div>
                      </form>
@@ -100,4 +100,8 @@ Authorization: 'Bearer ' + localStorage.getItem('token')
 </script>
 
 <style scoped>
+.btn {
+    border-top-left-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+}
 </style>

@@ -3,9 +3,9 @@
         <section class="section">
             <div class="container-fluid">
                 <h1>Votre profil</h1>
-                <div class="container-fluid bg-info col-6">
+                <div class="container-fluid bg-primary col-6">
                     <div>
-                    <img alt="Profil image" class="rounded-circle" src="https://picsum.photos/80/80/?random?image=4">
+                    <img alt="Profil image" class="rounded-circle" src="https://picsum.photos/60/60/?random?image=2">
     </div>
     <div>
         <p class="text-secondary font-weight-bold">{{ pseudo}}</p>
@@ -74,3 +74,9 @@ deleteUser() {
 } 
 }
 </script>
+<style scoped>
+.btn {
+    border-top-left-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+}
+</style>

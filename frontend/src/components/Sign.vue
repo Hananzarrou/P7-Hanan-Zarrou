@@ -1,7 +1,7 @@
 <template>
 <div class="bg-primary">
-<div class="card login col-sm-6 mx-auto bg-white my-25">
-    <h3 class="text-secondary">Créer un compte</h3>
+<div class="card login col-sm-8 mx-auto bg-white my-20">
+    <h4 class="text-secondary">Créer un compte</h4>
 
 <form id="form"
     @submit.prevent="signup()"
@@ -132,7 +132,7 @@ methods:{
 
 <style scoped>
 .signin {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 .btn {
     margin-bottom: 20px;
@@ -144,6 +144,6 @@ methods:{
 }
 .error {
     color: red;
-    font-weight: bold;
+    font-weight: normal;
 }
 </style>
