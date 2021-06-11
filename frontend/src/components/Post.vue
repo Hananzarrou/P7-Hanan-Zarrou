@@ -55,4 +55,8 @@ data() {
  max-width: 200px;
  max-height: 200px;
 }
+.card {
+ border-radius: 2.25rem;
+           
+}
 </style>

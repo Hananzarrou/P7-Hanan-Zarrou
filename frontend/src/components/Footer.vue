@@ -5,7 +5,7 @@
             <ul class="list-inline">
                 <li class="list-inline-item"><a class="font-weight-normal text-secondary" href="#">Mentions légales</a></li>
                 <li class="list-inline-item"><a class="font-weight-normal text-secondary" href="#">Signaler un bug</a></li>
-                <li class="list-inline-item"><a class="font-weight-normal text-secondary" href="/myprofile">voir mon  profil</a></li>
+                <li class="list-inline-item"><a class="font-weight-normal text-secondary" href="/myprofile">Mon compte</a></li>
             </ul>
             <p class="copyright">Groupomania © 2021</p>
         </footer>

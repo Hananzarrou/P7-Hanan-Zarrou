@@ -1,21 +1,21 @@
 {
   "development": {
-    "username": "root",
-    "password": "$2y$12$rnnC4lgYRpM3sE9r/ajO9eviy0QHd7PNhruv44wOLbysuyNPLUTVS" ,
+    "username": "hanan",
+    "password": "$2y$12$rnnC4lgYRpM3sE9r/ajO9eviy0QHd7PNhruv44wOLbysuyNPLUTVS",
     "database": "bas_groupomania_developement",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
-    "username": "root",
-    "password": "$2y$12$rnnC4lgYRpM3sE9r/ajO9eviy0QHd7PNhruv44wOLbysuyNPLUTVS" ,
+    "username": "hanan",
+    "password": "$2y$12$rnnC4lgYRpM3sE9r/ajO9eviy0QHd7PNhruv44wOLbysuyNPLUTVS",
     "database": "bas_groupomania_test",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": "$2y$12$rnnC4lgYRpM3sE9r/ajO9eviy0QHd7PNhruv44wOLbysuyNPLUTVS" ,
+    "username": "hanan",
+    "password": "$2y$12$rnnC4lgYRpM3sE9r/ajO9eviy0QHd7PNhruv44wOLbysuyNPLUTVS",
     "database": "bas_groupomania_production",
     "host": "127.0.0.1",
     "dialect": "mysql"

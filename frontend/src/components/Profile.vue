@@ -79,4 +79,8 @@ deleteUser() {
     border-top-left-radius: 1.25rem;
     border-bottom-right-radius: 1.25rem;
 }
+.container-fluid {
+    border-top-left-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+}
 </style>

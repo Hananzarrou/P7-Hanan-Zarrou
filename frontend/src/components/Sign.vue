@@ -1,6 +1,6 @@
 <template>
 <div class="bg-primary">
-<div class="card login col-sm-8 mx-auto bg-white my-20">
+<div class="card login col-sm-8 mx-auto bg-danger my-20">
     <h4 class="text-secondary">Créer un compte</h4>
 
 <form id="form"
@@ -145,5 +145,12 @@ methods:{
 .error {
     color: red;
     font-weight: normal;
+}
+.card {
+    border-bottom-left-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+
 }
 </style>

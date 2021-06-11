@@ -1,5 +1,5 @@
 <template>
-<div class="login col-sm-6 mx-auto bg-white my-50">
+<div class="login col-sm-6 mx-auto bg-purple my-50">
     <h3 class="text-secondary">Me connecter</h3>
 
 <form id="form"
@@ -10,7 +10,7 @@
     <div class="col-sm-4 mx-auto">
         <label for="email">Email</label>
     <div class="input-group">
-        <span class="input-group-addon bg-danger">
+        <span class="input-group-addon bg-info">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-person-fill" viewBox="2 1 10 13">
             <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
         </svg></span>
@@ -114,5 +114,13 @@ methods:{
 .error {
     color: red;
     font-weight: bold;
+}
+.login {
+    border-top-left-radius: 2.25rem;
+    border-bottom-right-radius: 2.25rem;
+    background-color: rgb(191, 147, 235);
+}
+.bg-info {
+    background-color: #b30ab3 !important;
 }
 </style>
