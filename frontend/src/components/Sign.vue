@@ -1,6 +1,6 @@
 <template>
 <div class="bg-primary">
-<div class="card login col-sm-8 mx-auto bg-danger my-20">
+<div class="card login col-sm-8 mx-auto bg-primary my-20">
     <h4 class="text-secondary">Créer un compte</h4>
 
 <form id="form"

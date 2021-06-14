@@ -14,7 +14,7 @@
                         <form @submit.prevent="create">
                             <div class="form-group mb-0">
                                 <label class="sr-only" for="post">Créer un post</label>
-                                <textarea name="post" type="text" v-model="post" class="form-control border-10" id="post" rows="3" placeholder="Quoi de neuf aujourd'hui ?" required></textarea>
+                                <textarea name="post" type="text" v-model="post" class="form-control border-0" id="post" rows="2" placeholder="Quoi de neuf aujourd'hui ?" required></textarea>
                             </div>
                         </form>
                             <div class="col">
@@ -80,13 +80,20 @@ axios.post('http://localhost:3000/api/auth/post', data, {
     alert("Bravo! Votre post est bien crée");
     this.submitStatus = true;
 })
-.catch(e => {
-        console.log(e);
+/*.catch(error) {
+  console.log(error);
+}*/
+.catch(error => {
+      console.log(error.response);
 });
+/*.catch(e => {
+        console.log(e);
+});*/
 }
 }
 }
 </script>
+
 
 <style scoped>
 .btn {
