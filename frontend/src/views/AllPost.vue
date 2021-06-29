@@ -4,7 +4,7 @@
 <Jumbo />
 <Post
     v-for="post in posts"
-    :pseudo ="post.User.pseudo"
+    :pseudo ="post.pseudo"
     :content ="post.content"
     :imageUrl ="post.imageUrl"
     :key="post.id" >
@@ -110,7 +110,6 @@ Authorization: 'Bearer ' + localStorage.getItem('token')
 }
 })
 .then((res) => {
-    console.log(res);
     console.log(res);
     alert("Commentaire posté");
 })
