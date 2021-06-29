@@ -5,7 +5,10 @@
 </template>
 
 <script>
-export default {};
+export default {
+  content: '' ,
+  posts:[]
+};
 </script>
 
 <style lang="scss">

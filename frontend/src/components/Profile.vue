@@ -34,7 +34,7 @@ name: 'profile',
 data() {
     return {
         
-    token: localStorage.getItem('token'),   
+    //token: localStorage.getItem('token'),   
     image: "",
     name: "",
     pseudo: localStorage.getItem('pseudo'),

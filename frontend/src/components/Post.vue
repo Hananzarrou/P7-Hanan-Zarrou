@@ -47,6 +47,7 @@ data() {
             type: String
         }
     },
+  
 }
 </script>
 

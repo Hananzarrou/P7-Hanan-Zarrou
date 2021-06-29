@@ -5,6 +5,7 @@
   <SendPost />
   <Footer />
   </div>
+
 </template>
 
 <script>
@@ -13,8 +14,9 @@ import SendPost from '@/components/SendPost.vue'
 import Footer from '@/components/Footer.vue'
 export default {
   name: 'AddPost', 
+  content: '' ,
   components: {
-  NavbarPost, SendPost, Footer    
+  NavbarPost, SendPost, Footer,   
 }
 }
 </script>

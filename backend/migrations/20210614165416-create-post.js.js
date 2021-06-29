@@ -11,10 +11,15 @@ module.exports = {
       userId: {
         type: Sequelize.INTEGER,
         allowNull: false,
+        foreignKey: true,
       },
       content: {
         type: Sequelize.STRING,
         allowNull: false,
+      },
+      imageUrl: {
+        allowNull: true,
+        type: Sequelize.STRING
       },
       createdAt: {
         allowNull: false,

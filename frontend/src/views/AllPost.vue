@@ -29,14 +29,14 @@
         </div>
       <div>
         <button @click.prevent="sendCom(post.id)" id="sendcom" type="submit" aria-label="Publication d'un commentaire">Commenter</button>
-        <button type="submit" @click.prevent="deletePost(post.id)" id="delpost" v-if="user_id == post.user_id || isAdmin == 1">Supprimer le post</button>
+        <button type="submit" @click.prevent="deletePost(post.id)" id="delpost" v-if="userId == post.userId || isAdmin == 1">Supprimer le post</button>
         </div>
       </form>
     </div>
  </template>
 </Post>
-  <Footer />
-  </div>
+<Footer />
+</div>
 </template>
 
 <script>
@@ -45,7 +45,6 @@ import Jumbo from '@/components/Jumbo.vue'
 import Post from '@/components/Post.vue'
 import Footer from '@/components/Footer.vue'
 import axios from "axios";
-
 export default {
   name: 'allpost', 
   components: {
@@ -55,10 +54,10 @@ data() {
     
     return {
     posts: "",
-    user_id: localStorage.getItem("userId"),
+    userId: localStorage.getItem("userId"),
     isAdmin: 1,
     post: {
-    user_id: localStorage.getItem("userId"),
+    userId: localStorage.getItem("userId"),
     id:"",
     content: "",
     imageUrl: "",
@@ -81,8 +80,7 @@ contentComment: {
 },
 created() {
     
-axios
-.get('http://localhost:3000/api/auth/post', {
+axios.get('http://localhost:3000/api/auth/post', {
     headers: {
         'authorization': 'bearer ' + localStorage.getItem('token')
             }})
@@ -148,3 +146,26 @@ deletePost(id) {
  max-height: 200px;
 }
 </style>
+
+<!--<template>
+  <div class="post">
+
+  <NavbarPost />
+  <Jumbo />
+  <Posts />
+  <Footer />
+  </div>
+</template>
+
+<script>
+import NavbarPost from '@/components/NavbarPost.vue'
+import Jumbo from '@/components/Jumbo.vue'
+import Posts from '@/components/Posts.vue'
+import Footer from '@/components/Footer.vue'
+export default {
+  name: 'AllPost', 
+  components: {
+  NavbarPost, Jumbo, Posts, Footer    
+}
+}
+</script>-->
