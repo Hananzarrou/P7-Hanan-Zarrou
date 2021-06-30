@@ -28,8 +28,8 @@
           ></textarea>
         </div>
       <div>
-        <button @click.prevent="sendCom(post.id)" id="sendcom" type="submit" aria-label="Publication d'un commentaire">Commenter</button>
-        <button type="submit" @click.prevent="deletePost(post.id)" id="delpost" v-if="userId == post.userId || isAdmin == 1">Supprimer le post</button>
+        <button  class="btn btn-light mr-5 font-weight-bold mb-2 mt-2" @click.prevent="sendCom(post.id)" id="sendcom" type="submit" aria-label="Publication d'un commentaire">Publier le commentaire</button>
+        <button  class="btn btn-light mr-5 font-weight-bold mb-2 mt-4" type="submit" @click.prevent="deletePost(post.id)" id="delpost" v-if="userId == post.userId || isAdmin == 1">Supprimer le post</button>
         </div>
       </form>
     </div>
@@ -144,6 +144,12 @@ deletePost(id) {
  max-width: 200px;
  max-height: 200px;
 }
+.btn{
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: rgb(192, 97, 192);
+}
+
 </style>
 
 <!--<template>
