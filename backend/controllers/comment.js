@@ -1,19 +1,22 @@
-const Comment = require('../models/Comment');
+const db = require ("../models/index");
+const Post = db.post;
+const User = db.user;
+const Comment = db.comment;
+//const Comment = require('../models/Comment');
 const fs = require('fs');
 
 exports.createComment = (req, res, next) => {
 // Analyse le commentaire en utilisant une chaîne de caractères
-
-  const commentObject = JSON.parse(req.body.comment);
-  delete commentObject._id;
+console.log (req.body.content)
+  const commentObject = {
+    content: req.body.content,
+    postId: req.body.postId,
+    userId: req.body.userId,
+  };
+  
   console.log(commentObject);
-  const comment= new Comment({
-    ...commentObject,
-//Capture et enregistre l'image en définissant correctement son image URL
-imageUrl: `${req.protocol}://${req.get('host')}/images/${req.file.filename}`,
-});
-//Enregistre le post dans la base de données
-comment.save()
+  
+Comment.create(commentObject)
     .then(() => res.status(201).json({ message: 'Commentaire enregistré !'}))
     .catch(error => res.status(400).json({ error }));
 };

@@ -24,7 +24,7 @@
     <div>
       <form>
         <div>
-          <textarea id="contentComment" class="form-control" v-model="contentComment.content" aria-label="Zone d'un commentaire" placeholder="Commenter"
+          <textarea id="contentComment" class="form-control" v-model="content" aria-label="Zone d'un commentaire" placeholder="Commenter"
           ></textarea>
         </div>
       <div>
@@ -73,9 +73,7 @@ data() {
         userId: "",
         id:""
       },
-contentComment: {
-                content: ''
-            },
+content: ""
 }
 },
 created() {
@@ -90,6 +88,7 @@ axios.get('http://localhost:3000/api/auth/post', {
         console.log(response);
     })
 },
+
 methods: {
     postImage() {
         console.log(this.post.imageUrl);
@@ -98,12 +97,13 @@ methods: {
     },
     sendCom(id) {
         const comment = {
-        content: this.comment.content,
+        content: this.content,
         userId: parseInt(localStorage.getItem('userId')),
         postId: id
     };
     console.log(id);
-axios.post('http://localhost:3000/api/auth/' + id + '/comment', comment,
+
+axios.post('http://localhost:3000/api/comments/' + id + '/comment', comment,
 {
 headers: {
 Authorization: 'Bearer ' + localStorage.getItem('token')
