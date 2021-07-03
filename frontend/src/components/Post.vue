@@ -29,10 +29,12 @@ data() {
 },
     props: {
         
-        pseudo: {
+        pseudo: localStorage.getItem('pseudo'),
+        
+        /*pseudo: {
             type: String,
             default: ""
-        },
+        },*/
         content: {
             type: String,
             default: ""

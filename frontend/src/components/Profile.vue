@@ -46,7 +46,7 @@ validations: {
    name: {
         required,
     },
-    
+
 },
 methods:{
   handleFileUpload(){
@@ -59,7 +59,10 @@ deleteUser() {
     const isAdmin = 1 ;
     if(id == id || isAdmin == 1) {
     axios.delete('http://localhost:3000/api/auth/' + id, {
-        headers: {Authorization: "Bearer " + this.token}
+        /*headers: {Authorization: "Bearer " + this.token}*/
+        headers:   { 
+            Authorization: "Bearer" + localStorage.getItem("token")
+        }
     })
     .then(res => {
         console.log(res);
