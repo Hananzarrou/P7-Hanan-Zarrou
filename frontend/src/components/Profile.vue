@@ -12,7 +12,7 @@
     </div>
                 <div class="form-group">
                     <div class="col mx-auto">
-                <b-link class="btn btn-light mr-5 font-weight-bold mb-5" to="Allpost">Voir le forum</b-link>
+                <b-link class="btn btn-light font-weight-bold mb-5" to="Allpost">Voir le forum</b-link>
                 <b-link class="btn btn-light font-weight-bold mb-5" to="Addpost">Rédiger un post</b-link>
                 </div>
                 <div>
@@ -45,8 +45,7 @@ data() {
 validations: {
    name: {
         required,
-    },
-
+    }
 },
 methods:{
   handleFileUpload(){
@@ -59,11 +58,9 @@ deleteUser() {
     const isAdmin = 1 ;
     if(id == id || isAdmin == 1) {
     axios.delete('http://localhost:3000/api/auth/' + id, {
-        /*headers: {Authorization: "Bearer " + this.token}*/
-        headers:   { 
-            Authorization: "Bearer" + localStorage.getItem("token")
-        }
-    })
+    headers: {
+        'authorization': 'bearer ' + localStorage.getItem('token')
+            }})
     .then(res => {
         console.log(res);
         alert("Votre compte à bien été supprimé !");
@@ -79,8 +76,9 @@ deleteUser() {
 </script>
 <style scoped>
 .btn {
-    border-top-left-radius: 1.25rem;
-    border-bottom-right-radius: 1.25rem;
+    border-top-left-radius: 2.25rem;
+    border-bottom-right-radius: 2.25rem;
+    background-color: #d147b8;
 }
 .container-fluid {
     border-top-left-radius: 2.25rem;
