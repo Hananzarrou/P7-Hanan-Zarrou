@@ -25,11 +25,12 @@ export default {
 name: "Post",
 data() {
     return {
-    }
+        pseudo: localStorage.getItem("pseudo"),  
+    };
 },
     props: {
         
-        pseudo: localStorage.getItem('pseudo'),
+        /*pseudo: localStorage.getItem('pseudo'),*/
         
         /*pseudo: {
             type: String,

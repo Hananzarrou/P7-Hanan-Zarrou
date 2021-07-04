@@ -13,7 +13,16 @@
 <script>
 export default {
     name: 'Comment',
-    props: {
+    data() {
+    return {
+        commentPseudo: "",  
+        commentContent: "",
+        /*postId: "",
+        userId: "",*/
+
+    };
+},
+    /*props: {
         commentPseudo: {
             type: String,
             default: ""
@@ -22,7 +31,7 @@ export default {
             type: String,
             default: ""
         }
-    }
+    }*/
 }
 </script>
 <style scoped>
