@@ -60,14 +60,14 @@ deleteUser() {
     axios.delete('http://localhost:3000/api/auth/' + id, {
     headers: {
         'authorization': 'bearer ' + localStorage.getItem('token')
-            }})
+    }})
     .then(res => {
         console.log(res);
         alert("Votre compte à bien été supprimé !");
         localStorage.removeItem("token");
         localStorage.removeItem("userId");
         localStorage.removeItem("pseudo");
-        this.$router.push('/login');
+        this.$router.push('/signup');
     })
 }
 }

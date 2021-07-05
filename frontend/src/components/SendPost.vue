@@ -80,7 +80,7 @@ axios.post('http://localhost:3000/api/auth/post', formData,
 {
 headers: {
 "Content-Type": "multipart/form-data",
-Authorization: 'Bearer ' + localStorage.getItem('token')
+'authorization': 'bearer ' + localStorage.getItem('token')
 }
 })
 .then((res) => {
