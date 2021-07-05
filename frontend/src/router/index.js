@@ -40,6 +40,36 @@ const routes = [
     name: 'Post',
     component: () => import('../views/Post.vue')
   }, 
+  {
+    path: '/confidential',
+    name: 'Confidential',
+    component: () => import('../views/Confidential.vue')
+},
+{
+    path: '/reglement',
+    name: 'Reglement',
+    component: () => import('../views/Reglement.vue')
+},
+{
+    path: '/unsubscribe',
+    name: 'Unsubscribe',
+    component: () => import('../views/Unsubscribe.vue')
+},
+{
+    path: "/forum",
+    name: "Forum",
+    component: () => import('../views/Forum.vue')
+},
+{
+    path: "/forum-texte",
+    name: "ForumTexte",
+    component: () => import('../views/ForumTexte.vue')
+},
+{
+    path: '/forum-multimedia',
+    name: 'ForumMultimedia',
+    component: () => import('../views/ForumMultimedia.vue')
+}
 ]
 
 const router = new VueRouter({
