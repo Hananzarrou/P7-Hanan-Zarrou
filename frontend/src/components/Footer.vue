@@ -1,20 +1,24 @@
 <template>
     <footer class="footer row pb-3 m-0 p-lg-5">
         <ul class="col-12 d-flex flex-column justify-items-center align-items-center flex-md-row justify-content-md-between">
-            <li class="col-10 col-md-4 text-center list-unstyled">
-                <router-link class="text-white" to="/Confidential">Politique de confidentialité</router-link>
+            
+            <li class="col-10 col-md-2  mt-3 text-center list-unstyled">
+                <a class="font-weight-normal text-secondary" href="/myprofile">Mon compte</a>
             </li>
-            <li class="col-10 col-md-3 text-center list-unstyled">
-                <router-link class="text-white" to="/Reglement">Réglement du post</router-link>
-            </li>
-            <li class="col-10 col-md-3 text-center list-unstyled">
-                <router-link class="text-white" to="/Unsubscribe">Désinscription</router-link>
-            </li>
-            <li class="col-10 col-md-2 text-center list-unstyled">
-                <a class="text-white" href="mailto:groupomania@reseau-social.fr">Contact</a>
+             <li class="col-10 col-md-2 text-center list-unstyled">
+                <a class="text-secondary" href="mailto:groupomania@reseau-social.fr">Contact</a>
             </li> 
-            <li class="list-inline-item"><a class="font-weight-normal text-secondary" href="/myprofile">Mon compte</a></li>
 
+            <li class="col-10 col-md-4 text-center list-unstyled">
+                <router-link class="text-secondary" to="/Confidential">Politique de confidentialité</router-link>
+            </li>
+            <li class="col-10 col-md-3 text-center list-unstyled">
+                <router-link class="text-secondary" to="/Reglement">Réglement du post</router-link>
+            </li>
+            <li class="col-10 col-md-3 text-center list-unstyled">
+                <router-link class="text-secondary" to="/Unsubscribe">Désinscription</router-link>
+            </li>
+           
         </ul>
     </footer>
 </template>

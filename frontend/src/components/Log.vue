@@ -1,5 +1,5 @@
 <template>
-<div class="login col-sm-6 mx-auto bg-purple my-50">
+<div class="login col-sm-6 mx-auto bg-purpple my-50 mb-2">
     <h3 class="text-secondary">Me connecter</h3>
 
 <form id="form"
@@ -47,10 +47,10 @@
     </div>
     </div>
     
-    <button class="btn btn-dark btn-sm" type="submit" @click.prevent="login">Connexion</button>
+    <button class="btn btn-dark btn-md" type="submit" @click.prevent="login">Connexion</button>
     </form>
     <p> Pas encore inscrit ? Créez votre compte dès aujourd'hui !</p>
-    <button class="btn btn-dark btn-sm" @click.prevent="goSignin" >Inscription</button>
+    <button class="btn btn-dark btn-md " @click.prevent="goSignin" >Inscription</button>
 </div>
 </template>
 
@@ -110,17 +110,20 @@ methods:{
 .btn {
     margin-bottom: 20px;
     font-weight: bold;
+    background-color: purple;
+    border-top-left-radius: 3.25rem;
+    border-bottom-right-radius: 3.25rem;
 }
 .error {
     color: red;
     font-weight: bold;
 }
 .login {
-    border-top-left-radius: 2.25rem;
-    border-bottom-right-radius: 2.25rem;
-    background-color: rgb(191, 147, 235);
+    border-top-left-radius: 3.25rem;
+    border-bottom-right-radius: 3.25rem;
+    background-color: rgb(228, 208, 226);
 }
 .bg-info {
-    background-color: #b30ab3 !important;
+    background-color: #af0faf !important;
 }
 </style>

@@ -21,14 +21,14 @@
                             </div>
                             <div class="form-group">
                             <label for="image">
-        <input class="btn fluid btn-fposts btn-sm bg-danger text-dark font-weight-bold" type="file" name="image" id="image" ref="image" v-on:change="handleFileUpload()"/>
-      </label>
+                              <input class="btn fluid btn-fposts btn-md  text-dark font-weight-bold" type="file" name="image" id="image" ref="image" v-on:change="handleFileUpload()"/>
+                            </label>
         
   <div class="col">
-                        <button class="btn fluid btn-fposts btn-sm bg-danger text-dark font-weight-bold">Envoyer</button>
+                        <button class="btn fluid btn-fposts btn-md  bg-purpple text-dark font-weight-bold ">Envoyer</button>
                     </div>
-                    </div>
-                     </form>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -99,8 +99,14 @@ headers: {
 </script>
 <style scoped>
 .btn {
+    border-top-left-radius: 2.25rem;
+    border-bottom-right-radius: 2.25rem;
+    background-color: #aa559a;
+}
+.input {
     border-top-left-radius: 1.25rem;
     border-bottom-right-radius: 1.25rem;
+    background-color: purple;
 }
 </style>
 <!--<template>

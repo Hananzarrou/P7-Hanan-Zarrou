@@ -63,12 +63,7 @@ export default ({
                     cache: 'default'
                 };
                 console.log(envoi);
-                /*fetch("http://localhost:3000/api/user/unsubscribe", envoi)
-                .then(response = response.json())
-                .then(login => {
-                    console.log('envoi ' + envoi);
-                })
-                .catch(error => alert("Erreur : " + error));*/
+                
             }
         }
     }

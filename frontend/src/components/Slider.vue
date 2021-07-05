@@ -16,7 +16,7 @@
         <img
             class="d-block img-fluid w-100"
             width="100"
-            height="100"
+            height="50"
             src="@/assets/photo5envir.jpg"
             alt="image slot"
           >
@@ -26,8 +26,8 @@
       <template  v-slot:img>
         <img
             class="d-block img-fluid w-100"
-            width="100"
-            height="100"
+            width="80"
+            height="50"
             src="@/assets/photo3envir.jpg"
             alt="image slot"
           >
@@ -37,8 +37,8 @@
       <template  v-slot:img>
         <img
             class="d-block img-fluid w-100"
-            width="100"
-            height="100"
+            width="80"
+            height="50"
             src="@/assets/photo1envir.jpg"
             alt="image slot"
           >
