@@ -3,38 +3,25 @@
         <ul class="col-12 d-flex flex-column justify-items-center align-items-center flex-md-row justify-content-md-between">
             
             <li class="col-10 col-md-2  mt-3 text-center list-unstyled">
-                <a class="font-weight-normal text-secondary" href="/myprofile">Mon compte</a>
+                <a class="font-weight-normal text-dark" href="/myprofile">Mon compte</a>
             </li>
              <li class="col-10 col-md-2 text-center list-unstyled">
-                <a class="text-secondary" href="mailto:groupomania@reseau-social.fr">Contact</a>
+                <a class="text-dark" href="mailto:groupomania@reseau-social.fr">Contact</a>
             </li> 
 
             <li class="col-10 col-md-4 text-center list-unstyled">
-                <router-link class="text-secondary" to="/Confidential">Politique de confidentialité</router-link>
+                <router-link class="text-dark" to="/Confidential">Politique de confidentialité</router-link>
             </li>
             <li class="col-10 col-md-3 text-center list-unstyled">
-                <router-link class="text-secondary" to="/Reglement">Réglement du post</router-link>
+                <router-link class="text-dark" to="/Reglement">Réglement du post</router-link>
             </li>
             <li class="col-10 col-md-3 text-center list-unstyled">
-                <router-link class="text-secondary" to="/Unsubscribe">Désinscription</router-link>
+                <router-link class="text-dark" to="/Unsubscribe">Désinscription</router-link>
             </li>
            
         </ul>
     </footer>
 </template>
-<!--<template>
-    <div class="footer bg-primary font-weight-bold text-secondary">
-        <footer>
-            
-            <ul class="list-inline">
-                <li class="list-inline-item"><a class="font-weight-normal text-secondary" href="#">Mentions légales</a></li>
-                <li class="list-inline-item"><a class="font-weight-normal text-secondary" href="#">Signaler un bug</a></li>
-                <li class="list-inline-item"><a class="font-weight-normal text-secondary" href="/myprofile">Mon compte</a></li>
-            </ul>
-            <p class="copyright">Groupomania © 2021</p>
-        </footer>
-    </div>
-</template>-->
 
 
 <script>
@@ -48,9 +35,9 @@ export default {
      display:flex;
     justify-content: space-around;
     margin-top: 20px;
-    background-color: rgb(226, 143, 212);
-    
+    background-color: rgb(226, 143, 212); 
  }
+ 
  .liste-inline {
    
  }
