@@ -1,5 +1,5 @@
 <template>
-    <div class="Navbar">
+<div class="Navbar">
 <b-navbar toggleable="lg" type="dark" variant="primary">
     <a href="/"><img class="img-fluid logo" src="../assets/icon-left-font-monochrome-black.svg" aria-label="logo groupomania" alt="Logo groupomania"></a>
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>

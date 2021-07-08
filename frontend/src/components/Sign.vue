@@ -1,6 +1,6 @@
 <template>
-<div class="bg-primary">
-<div class="card login col-sm-8 mx-auto bg-primary my-20">
+
+<div class="login col-sm-6 mx-auto bg-purpple my-50 mb-2">
     <h4 class="text-secondary">Créer un compte</h4>
 
 <form id="form"
@@ -74,7 +74,7 @@
     </form>
     
 </div>
-</div>
+
 </template>
 
 
@@ -139,18 +139,24 @@ methods:{
     font-weight: bold;
 }
 .btn-dark {
-    background-color: rgb(139, 27, 121);
-    
+    background-color: rgb(199, 84, 182);
+    border-bottom-right-radius: 2.5rem;
+    border-top-left-radius: 2.5rem;  
+}
+.login {
+    border-top-left-radius: 3.25rem;
+    border-bottom-right-radius: 3.25rem;
+    background-color: rgb(228, 208, 226);
 }
 .error {
     color: red;
     font-weight: normal;
 }
-.card {
-    border-bottom-left-radius: 1.5rem;
-    border-top-left-radius: 1.5rem;
-    border-bottom-right-radius: 1.5rem;
-    border-top-right-radius: 1.5rem;
+/*.card {
+    border-bottom-left-radius: 2.5rem;
+    border-top-left-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+    border-top-right-radius: 2.5rem;
 
-}
+}*/
 </style>

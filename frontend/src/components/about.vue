@@ -1,6 +1,6 @@
 <template>
 <div class="about"> 
-    <h1>Bienvenue chez Groupomania </h1>
+    <h1>Bienvenue sur le réseau social de Groupomania</h1>
     <h2> Echanger entre vous ! c'est le facteur clé de la  reuissite ...</h2>
 </div>  
 </template>

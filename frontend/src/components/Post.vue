@@ -60,7 +60,7 @@ data() {
  max-height: 200px;
 }
 .card {
- border-radius: 2.25rem;
-           
+    border-top-left-radius: 3.25rem;
+    border-bottom-right-radius: 3.25rem;          
 }
 </style>

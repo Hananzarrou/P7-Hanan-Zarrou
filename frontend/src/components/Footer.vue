@@ -38,7 +38,4 @@ export default {
     background-color: rgb(226, 143, 212); 
  }
  
- .liste-inline {
-   
- }
 </style>

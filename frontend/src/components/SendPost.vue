@@ -108,6 +108,10 @@ headers: {
     border-bottom-right-radius: 1.25rem;
     background-color: purple;
 }
+.card {
+    border-top-left-radius: 3.25rem;
+    border-bottom-right-radius: 3.25rem;          
+}
 </style>
 <!--<template>
 <div>
