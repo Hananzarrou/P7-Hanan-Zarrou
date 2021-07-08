@@ -8,8 +8,6 @@
           <div class="card my-3 bg-primary mx-auto">
                     
                 <ul>
-                    <!--<li> {{ userId.pseudo }} </li>
-                    <li> {{ post.content }} </li>-->
                     
                     <li> {{ post.userId }} </li>
                     <li> {{ post.content }} </li>
@@ -51,3 +49,14 @@ created(){
 }
 }
 </script>
+<style scoped>
+.card {
+   border-top-left-radius: 3.25rem;
+    border-bottom-right-radius: 3.25rem;
+}
+
+.row {
+    border-top-left-radius: 3.25rem;
+    border-bottom-right-radius: 3.25rem;          
+}
+</style>

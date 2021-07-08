@@ -6,7 +6,7 @@
         <div class="col-lg-8 mx-auto">
 			<div class="card my-3 bg-primary mx-auto">
                 <div class="card-header">
-					<h1 class="text-white"> Post </h1>
+					<h1 class="text-gray-dark"> Post </h1>
                 </div>
                 <div>
                     <p class="text-white font-weight-bold"> {{ pseudo }}</p>

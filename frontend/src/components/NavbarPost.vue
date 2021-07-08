@@ -25,7 +25,7 @@ export default {
     localStorage.removeItem('token')
     localStorage.removeItem('pseudo')
     localStorage.removeItem('userId')
-    this.$router.push('/login')
+    this.$router.push('/signup')
     }
 }
 }
@@ -33,7 +33,7 @@ export default {
 
 <style scoped>
 .navbar-dark .navbar-nav .nav-link {
-    color: white;
+    color: rgb(133, 128, 128);
 }
 /*.btn {
     border-top-left-radius: 25px;

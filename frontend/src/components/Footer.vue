@@ -3,7 +3,7 @@
         <ul class="col-12 d-flex flex-column justify-items-center align-items-center flex-md-row justify-content-md-between">
             
             <li class="col-10 col-md-2  mt-3 text-center list-unstyled">
-                <a class="font-weight-normal text-dark" href="/myprofile">Mon compte</a>
+                <a class="font-weight-bold text-dark" href="/myprofile">Mon compte</a>
             </li>
              <li class="col-10 col-md-2 text-center list-unstyled">
                 <a class="text-dark" href="mailto:groupomania@reseau-social.fr">Contact</a>
@@ -36,6 +36,11 @@ export default {
     justify-content: space-around;
     margin-top: 20px;
     background-color: rgb(226, 143, 212); 
+    font-weight: bold;
  }
+ .col-12 {
+    flex: 0 0 100%;
+    max-width: 90%;
+}
  
 </style>

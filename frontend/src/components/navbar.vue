@@ -1,3 +1,4 @@
+
 <template>
 <div class="Navbar">
 <b-navbar toggleable="lg" type="dark" variant="primary">
@@ -32,6 +33,9 @@ export default {
 <style scoped>
 .navbar-dark .navbar-nav .nav-link {
     color: rgb(116, 112, 112);
+    display:flex;
+    justify-content: space-around;
+    width:100%;
 }
 .logo {
     max-height: 100px;

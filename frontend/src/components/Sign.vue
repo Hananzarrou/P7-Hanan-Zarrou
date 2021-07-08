@@ -1,7 +1,7 @@
 <template>
 
 <div class="login col-sm-6 mx-auto bg-purpple my-50 mb-2">
-    <h4 class="text-secondary">Créer un compte</h4>
+    <h4 class="text-gray">Créer un compte</h4>
 
 <form id="form"
     @submit.prevent="signup()"
@@ -9,7 +9,7 @@
     novalidate="true">
 
     <div class="form-group form-group-sm" :class="{ 'form-group--error': $v.pseudo.$error }">
-    <div class="col-sm-4 mx-auto">
+    <div class="col-md-6 mx-auto">
         <label for="pseudo">Pseudo</label>
     <div class="input-group">
         <span class="input-group-addon bg-purple">
@@ -29,7 +29,7 @@
     </div>
 
     <div class="form-group form-group-sm" :class="{ 'form-group--error': $v.email.$error }">
-    <div class="col-sm-4 mx-auto">
+    <div class="col-md-6 mx-auto">
         <label for="email">Email</label>
     <div class="input-group">
         <span class="input-group-addon bg-purple">
@@ -49,7 +49,7 @@
     </div>
 
     <div class="form-group form-group-sm" :class="{ 'form-group--error': $v.password.$error }">
-    <div class="col-sm-4 mx-auto">
+    <div class="col-md-6 mx-auto">
         <label for="password">Mot de passe</label>
     <div class="input-group">
         <span class="input-group-addon bg-purple">
@@ -151,6 +151,9 @@ methods:{
 .error {
     color: red;
     font-weight: normal;
+}
+.form-control-sm {
+    border-radius: 2.2rem;
 }
 /*.card {
     border-bottom-left-radius: 2.5rem;

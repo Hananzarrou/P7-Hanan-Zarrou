@@ -4,7 +4,7 @@
             <div>
                 <img class="rounded-circle" width="50" src="https://picsum.photos/80/80/?random?image=4">
             </div>
-            <div class="text-white font-weight-bold">
+            <div class="text-dark-gray font-weight-bold">
                 {{ pseudo + " " + "a écrit"}}
             </div>
 			<div class="card my-3 mx-auto">
@@ -30,12 +30,6 @@ data() {
 },
     props: {
         
-        /*pseudo: localStorage.getItem('pseudo'),*/
-        
-        /*pseudo: {
-            type: String,
-            default: ""
-        },*/
         content: {
             type: String,
             default: ""

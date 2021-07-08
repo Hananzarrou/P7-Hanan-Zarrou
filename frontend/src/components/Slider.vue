@@ -3,7 +3,7 @@
     <b-carousel
       id="carousel-1"
       v-model="slide"
-      :interval="3000"
+      :interval="2000"
       controls
       indicators
       background="#ccc"
@@ -11,38 +11,23 @@
       @sliding-start="onSlideStart"
       @sliding-end="onSlideEnd"
     >
-    <b-carousel-slide>
+      <b-carousel-slide>
       <template  v-slot:img>
         <img
-            class="d-block img-fluid w-100"
-            width="100"
-            height="50"
+            class="d-block img-fluid w-100 h-50"
             src="@/assets/photo5envir.jpg"
             alt="image slot"
           >
-          </template>
+      </template>
       </b-carousel-slide>
       <b-carousel-slide>
       <template  v-slot:img>
         <img
-            class="d-block img-fluid w-100"
-            width="80"
-            height="50"
-            src="@/assets/photo3envir.jpg"
+            class="d-block img-fluid w-100 h-50"
+            src="@/assets/photo4envir-min.jpg"
             alt="image slot"
           >
-          </template>
-      </b-carousel-slide>
-      <b-carousel-slide>
-      <template  v-slot:img>
-        <img
-            class="d-block img-fluid w-100"
-            width="80"
-            height="50"
-            src="@/assets/photo1envir.jpg"
-            alt="image slot"
-          >
-          </template>
+      </template>
       </b-carousel-slide>
     </b-carousel>
   </div>
