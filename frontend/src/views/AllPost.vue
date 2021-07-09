@@ -28,7 +28,7 @@
         </div>
       <div>
         <button  class="btn btn-light mr-5 font-weight-bold mb-2 mt-2" @click.prevent="sendCom(post.id)" id="sendcom" type="submit" aria-label="Publication d'un commentaire">Publier le commentaire</button>
-        <button  class="btn btn-light mr-5 font-weight-bold mb-2 mt-4" type="submit" @click.prevent="deletePost(post.id)" id="delpost" v-if="userId == post.userId || isAdmin == 1">Supprimer le post</button>
+        <button  class="btn btn-light mr-5 font-weight-bold mb-2 mt-4" type="submit" @click.prevent="deletePost(post.id)" id="delpost" v-if="userId == post.userId || isAdmin == 1" aria-label="Supression du post">Supprimer le post</button>
         </div>
       </form>
     </div>

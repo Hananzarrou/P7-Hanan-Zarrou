@@ -6,9 +6,9 @@
 
     <b-collapse id="nav-collapse" is-nav>
     <b-navbar-nav class="ml-auto">
-        <b-nav-item size="sm" class="mr-sm-2 font-weight-bold"><router-link to="/allpost" class="nav-link">Tous les posts</router-link></b-nav-item>
-        <b-nav-item size="sm" class="mr-sm-2 font-weight-bold"><router-link to="/post/create" class="nav-link">Ajouter un post</router-link></b-nav-item>
-        <b-nav-item size="sm" class="mr-sm-2 font-weight-bold"  @click="logout" >Se déconnecter</b-nav-item>
+        <b-nav-item size="sm" class="mr-sm-2 font-weight-bold"><router-link to="/allpost" class="nav-link" aria-label="rejoindre la page tous les posts">Tous les posts</router-link></b-nav-item>
+        <b-nav-item size="sm" class="mr-sm-2 font-weight-bold"><router-link to="/post/create" class="nav-link" aria-label="rejoindre la page ajouter un post">Ajouter un post</router-link></b-nav-item>
+        <b-nav-item size="sm" class="mr-sm-2 font-weight-bold"  @click="logout" aria-label="se deconnecter" >Se déconnecter</b-nav-item>
         
     </b-navbar-nav>
 
@@ -36,7 +36,7 @@ export default {
     width: 100%;
 }
 .navbar-dark .navbar-nav .nav-link {
-    color: rgb(133, 128, 128);
+    color: rgb(41, 40, 40);
 }
 /*.btn {
     border-top-left-radius: 25px;

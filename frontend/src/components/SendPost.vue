@@ -16,7 +16,7 @@
                     <div class="col">
                         <form v-on:submit.prevent="createPost" enctype="multipart/form-data">
                             <div class="form-group mb-2">
-                                <label class="sr-only" for="content">Créer un post</label>
+                                <label class="sr-only" for="content" aria-label="boutton créer un post">Créer un post</label>
                                 <b-form-textarea name="content" type="text" v-model="content" class="form-control border-0" id="content" rows="3" placeholder="Quoi de neuf aujourd'hui ?" required></b-form-textarea>
                             </div>
                             <div class="form-group">
@@ -25,7 +25,7 @@
                             </label>
         
   <div class="col">
-                        <button class="btn fluid btn-fposts btn-md  bg-purpple text-dark font-weight-bold ">Envoyer</button>
+                        <button class="btn fluid btn-fposts btn-md  bg-purpple text-dark font-weight-bold" aria-label="boutton envoyer">Envoyer</button>
                     </div>
                             </div>
                         </form>

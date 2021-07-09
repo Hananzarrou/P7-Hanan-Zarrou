@@ -12,11 +12,11 @@
     </div>
                 <div class="form-group">
                     <div class="col mx-auto">
-                <b-link class="btn btn-light font-weight-bold mb-5" to="Allpost">Voir le forum</b-link>
-                <b-link class="btn btn-light font-weight-bold mb-5" to="Addpost">Rédiger un post</b-link>
+                <b-link class="btn btn-light font-weight-bold mb-5" to="Allpost" aria-label="rejoindre la page forum">Voir le forum</b-link>
+                <b-link class="btn btn-light font-weight-bold mb-5" to="Addpost" aria-label="rejoindre la page rédiger un post">Rédiger un post</b-link>
                 </div>
                 <div>
-                <b-link class="btn btn-danger font-weight-bold mb-5" @click.prevent="deleteUser">Supprimer mon compte</b-link>
+                <b-link class="btn btn-danger font-weight-bold mb-5" @click.prevent="deleteUser" aria-label="rejoindre la page supprimer mon compte">Supprimer mon compte</b-link>
                 </div>
                 </div>
                 </div>
