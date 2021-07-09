@@ -4,7 +4,7 @@
 <Jumbo />
 <Post
     v-for="post in posts"
-    :pseudo ="post.pseudo"
+    :pseudo ="post.User.pseudo"
     :content ="post.content"
     :imageUrl ="post.imageUrl"
     :key="post.id" >

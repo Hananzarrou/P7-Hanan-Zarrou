@@ -1,5 +1,5 @@
 <template>
-    <footer class="footer row pb-3 m-0 p-lg-5">
+    <footer class="footer row pb-3 m-0 p-lg-2">
         <ul class="col-12 d-flex flex-column justify-items-center align-items-center flex-md-row justify-content-md-between">
             
             <li class="col-10 col-md-2  mt-3 text-center list-unstyled">
@@ -35,7 +35,7 @@ export default {
      display:flex;
     justify-content: space-around;
     margin-top: 20px;
-    background-color: rgb(226, 143, 212); 
+    background-color: rgb(141, 75, 130); 
     font-weight: bold;
  }
  .col-12 {

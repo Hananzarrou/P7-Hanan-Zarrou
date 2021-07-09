@@ -15,10 +15,16 @@ export default {
     h2 {
         color: #444242;
         font-weight: normal;
+
     };
     h4 {
         color: #4d1143;
         font-weight: normal;
+        
+    }
+    .about{
+        background-color: rgb(211, 136, 198);
+        margin-bottom: 0.29rem;
     }
 
 </style>

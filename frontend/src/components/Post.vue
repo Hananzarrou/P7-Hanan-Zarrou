@@ -23,12 +23,13 @@
 <script>
 export default {
 name: "Post",
-data() {
-    return {
-        pseudo: localStorage.getItem("pseudo"),  
-    };
-},
+
     props: {
+        pseudo: {
+            type: String,
+            default: ""
+        },
+
         
         content: {
             type: String,
