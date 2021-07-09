@@ -27,7 +27,7 @@ Post.create(post)
 exports.findAll = (req,res) => {
    
 Post.findAll({
-  include: [{model: User, Comment}],
+  include: [{model: User, Comment}, {model: Comment, Comment}],
     order: [['createdAt', 'DESC']],
 })
   .then(data => {

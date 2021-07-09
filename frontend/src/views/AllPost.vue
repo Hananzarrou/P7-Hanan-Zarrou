@@ -11,10 +11,9 @@
   <template v-slot:Comments v-if="post.Comments !== null">
     <div class="last-comments">
                 <div class="comment-bloc"
-                  v-for="comment in post.comments"
+                  v-for="comment in post.Comments"
                   v-bind:key="comment.id">
                   <div class="comment-area">
-                  <p class="user-name">{{ comment.User.pseudo }}</p>
                   <p>{{ comment.content }}</p>
                 </div>
               </div>
@@ -84,7 +83,7 @@ axios.get('http://localhost:3000/api/auth/post', {
             }})
     .then((response) => {
         
-        this.posts = response.data;
+        this.posts = response.data.filter((post) => post.User !== null);
         console.log(response);
     })
 },
@@ -112,6 +111,7 @@ Authorization: 'Bearer ' + localStorage.getItem('token')
 .then((res) => {
     console.log(res);
     alert("Commentaire posté");
+    location.reload();
 })
 .catch(e => {
         console.log(e + "Impossible d'éditer le post, une erreur est survenue");
