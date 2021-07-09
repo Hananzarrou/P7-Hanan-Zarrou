@@ -31,6 +31,9 @@ export default {
 </script>
 
 <style scoped>
+.navbar{
+    width: 100%;
+}
 .navbar-dark .navbar-nav .nav-link {
     color: rgb(116, 112, 112);
     display:flex;

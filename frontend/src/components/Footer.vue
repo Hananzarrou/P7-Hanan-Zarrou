@@ -8,10 +8,6 @@
              <li class="col-10 col-md-2 text-center list-unstyled">
                 <a class="text-dark" href="mailto:groupomania@reseau-social.fr">Contact</a>
             </li> 
-
-            <li class="col-10 col-md-4 text-center list-unstyled">
-                <router-link class="text-dark" to="/Confidential">Politique de confidentialité</router-link>
-            </li>
             <li class="col-10 col-md-3 text-center list-unstyled">
                 <router-link class="text-dark" to="/Reglement">Réglement du post</router-link>
             </li>

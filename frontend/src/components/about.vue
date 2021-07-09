@@ -1,7 +1,7 @@
 <template>
 <div class="about"> 
     <h2>Bienvenue sur le réseau social de Groupomania</h2>
-    <h4> Echanger entre vous ! c'est le facteur clé de la  reuissite ...</h4>
+    <h4> Echanger entre vous ! c'est le facteur clé de la  réussite ...</h4>
 </div>  
 </template>
 
