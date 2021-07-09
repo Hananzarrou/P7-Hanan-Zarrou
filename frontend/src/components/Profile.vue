@@ -75,6 +75,7 @@ deleteUser() {
 }
 </script>
 <style scoped>
+
 .btn {
     border-top-left-radius: 2.25rem;
     border-bottom-right-radius: 2.25rem;
@@ -83,5 +84,7 @@ deleteUser() {
 .container-fluid {
     border-top-left-radius: 2.25rem;
     border-bottom-right-radius: 2.25rem;
+   
 }
+
 </style>
