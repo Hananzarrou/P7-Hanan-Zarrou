@@ -6,7 +6,7 @@
                 <a class="font-weight-bold text-dark" href="/myprofile">Mon compte</a>
             </li>
              <li class="col-10 col-md-2 text-center list-unstyled">
-                <a class="text-dark" href="mailto:groupomania@reseau-social.fr">Contact</a>
+                <a class="text-dark" href="https://openclassrooms.com/fr/dashboard/paths#path-185">Contact</a>
             </li> 
             <li class="col-10 col-md-3 text-center list-unstyled">
                 <router-link class="text-dark" to="/Reglement">Réglement du post</router-link>

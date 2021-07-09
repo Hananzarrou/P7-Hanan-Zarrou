@@ -2,10 +2,10 @@
     <div class="unsubscrive form-row rounded bg-transparent shadow justify-content-center">    
         <form id="unsubscribe" @submit="submitFormUnsubscribe" class="row justify-content-center was-validated needs-validation" novalidate>
             <div class="form-group col-9 col-md-10 m-0">
-                <label for="identifiant"></label> 
-                <input type="text" name="identifiant" id="identifiant" class="form-control form-control-lg" placeholder="Identifiant" v-model="identifiant" pattern="[0-9]{4}" required>
+                <label for="pseudot"></label> 
+                <input type="text" name="pseudo" id="pseudo" class="form-control form-control-lg" placeholder="Pseudo" v-model="pseudo" pattern="[0-9]{4}" required>
                 <div class="valid-feedback">Valide</div>
-                <div class="invalid-feedback">Veuillez saisir votre identifiant de salarié</div>
+                <div class="invalid-feedback">Veuillez saisir votre pseudo</div>
             </div>
             <div class="form-group col-9 col-md-10 m-0">
                 <label for="email"></label> 
