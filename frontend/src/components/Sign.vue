@@ -1,7 +1,7 @@
 <template>
 
 <div class="login col-sm-6 mx-auto bg-purpple my-50 mb-2">
-    <h4 class="text-gray">Créer un compte</h4>
+    <h3 class="text-black">Créer un compte</h3>
 
 <form id="form"
     @submit.prevent="signup()"
@@ -13,7 +13,7 @@
         <label for="pseudo">Pseudo</label>
     <div class="input-group">
         <span class="input-group-addon bg-purple">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="purple" class="bi bi-person-fill" viewBox="0 0 16 16">
   <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
 </svg></span>
         <input
@@ -33,7 +33,7 @@
         <label for="email">Email</label>
     <div class="input-group">
         <span class="input-group-addon bg-purple">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="purple" class="bi bi-envelope-fill" viewBox="0 0 16 16">
   <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
 </svg></span>
         <input
@@ -53,7 +53,7 @@
         <label for="password">Mot de passe</label>
     <div class="input-group">
         <span class="input-group-addon bg-purple">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-file-lock2-fill" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="purple" class="bi bi-file-lock2-fill" viewBox="0 0 16 16">
             <path d="M7 6a1 1 0 0 1 2 0v1H7V6z"/>
             <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-2 6v1.076c.54.166 1 .597 1 1.224v2.4c0 .816-.781 1.3-1.5 1.3h-3c-.719 0-1.5-.484-1.5-1.3V8.3c0-.627.46-1.058 1-1.224V6a2 2 0 1 1 4 0z"/>
             </svg>
@@ -154,6 +154,12 @@ methods:{
 }
 .form-control-sm {
     border-radius: 2.2rem;
+}
+h3{
+    color:black;
+}
+.label{
+    color:black;
 }
 /*.card {
     border-bottom-left-radius: 2.5rem;

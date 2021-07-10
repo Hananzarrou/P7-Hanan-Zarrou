@@ -16,7 +16,7 @@
                 <b-link class="btn btn-light font-weight-bold mb-5" to="Addpost" aria-label="rejoindre la page rédiger un post">Rédiger un post</b-link>
                 </div>
                 <div>
-                <b-link class="btn btn-danger font-weight-bold mb-5" @click.prevent="deleteUser" aria-label="rejoindre la page supprimer mon compte">Supprimer mon compte</b-link>
+                <b-link class="btn btn-light font-weight-bold mb-5" @click.prevent="deleteUser" aria-label="rejoindre la page supprimer mon compte">Supprimer mon compte</b-link>
                 </div>
                 </div>
                 </div>
@@ -79,7 +79,7 @@ deleteUser() {
 .btn {
     border-top-left-radius: 2.25rem;
     border-bottom-right-radius: 2.25rem;
-    background-color: #d147b8;
+    background-color: #E085D0;
 }
 .container-fluid {
     border-top-left-radius: 2.25rem;

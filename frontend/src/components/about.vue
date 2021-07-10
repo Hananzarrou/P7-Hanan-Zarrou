@@ -1,7 +1,7 @@
 <template>
 <div class="about"> 
     <h2>Bienvenue sur le réseau social de Groupomania</h2>
-    <h4> Echanger entre vous ! c'est le facteur clé de la  réussite ...</h4>
+    <h3> Echanger entre vous ! c'est le facteur clé de la  réussite ...</h3>
 </div>  
 </template>
 
@@ -13,18 +13,19 @@ export default {
 
 <style scoped>
     h2 {
-        color: #444242;
+        color: #9232aa;
         font-weight: normal;
 
     };
-    h4 {
-        color: #4d1143;
+    h3 {
+        color:rgb(168, 161, 161);
         font-weight: normal;
         
     }
     .about{
-        background-color: rgb(211, 136, 198);
+        background-color: rgb(236, 222, 234);
         margin-bottom: 0.29rem;
+        
     }
 
 </style>

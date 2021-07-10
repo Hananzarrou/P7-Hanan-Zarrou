@@ -147,7 +147,7 @@ deletePost(id) {
 .btn{
   border-top-left-radius: 25px;
   border-bottom-right-radius: 25px;
-  background-color: rgb(192, 97, 192);
+  background-color: #D28ED2;
 }
 
 </style>
