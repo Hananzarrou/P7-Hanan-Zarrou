@@ -139,7 +139,7 @@ methods:{
     font-weight: bold;
 }
 .btn-dark {
-    background-color: rgb(199, 84, 182);
+    background-color: #702364;
     border-bottom-right-radius: 2.5rem;
     border-top-left-radius: 2.5rem;  
 }
